@@ -2,7 +2,7 @@
 # 数据结构与算法
 
 # Redux-Saga
-本篇文章是建立在读者已经了解redux以及redux-saga的基本使用方法的前提下进行书写的。如果对于redux和redux中间件的机制以及redux-saga的基本使用方法还不太清除的同学，建议先去了解一下这仨玩意儿再回来看~本文是基于我自己对阅读redux-saga源码的一些粗浅理解，如果哪里有没说明白或者说错的话，请一定告知~谢谢~
+本篇文章是建立在读者已经了解redux以及redux-saga的基本使用方法的前提下进行书写的。如果对于redux和redux中间件的机制以及redux-saga的基本使用方法还不太清除的同学，建议先去了解一下这仨玩意儿再回来看。本文是基于我自己对阅读redux-saga源码的一些粗浅理解，如果哪里有没说明白或者说错的话，请一定告知，谢谢~
 
 本篇简单解析一下redux-saga这个中间件中的take和put的原理~
 我将会使用下面这个最简单的计数器作为例子
@@ -546,5 +546,5 @@ runPutEffect中，实际就是执行了env.dispatch(action) 这个env.dispatch�
 
 action是同步的 ’ADD‘， 同步处理的操作是可以放在reducer中的，所以从这里开始，就是redux自己处理reducer的逻辑了。
 
-基本上redux-saga中的take和put主要的原理就是这样~下次有空再一起了解一下比较复杂的takeEvery的原理吧~
+基本上redux-saga中的take和put主要的原理就是这样。下次有空再一起了解一下比较复杂的takeEvery的原理吧~
 
