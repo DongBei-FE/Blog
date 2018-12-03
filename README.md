@@ -4,5 +4,5 @@
 # Redux
   [redux-saga](./redux)
 
-#Python-Study
+# Python-Study
   [my-python-study](./python)
