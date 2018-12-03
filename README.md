@@ -3,3 +3,6 @@
 
 # Redux
   [redux-saga](./redux)
+
+#Python-Study
+  [my-python-study](./python)
